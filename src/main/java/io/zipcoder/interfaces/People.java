@@ -35,7 +35,7 @@ public abstract class People< E extends Person> implements Iterable {
 
 
 
-
+//
     public boolean contains(E person){
        return personList.contains(person);
 //        for(Person po : personList) {
