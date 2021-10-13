@@ -49,13 +49,13 @@ public abstract class People< E extends Person> implements Iterable {
 
 
     public boolean contains(E person){
-       return personList.contains(person);
-//        for(Person po : personList) {
-//              if(personList.contains(person) ){
-//                return true;
-//            }
-//        }
-//        return false;
+      // return personList.contains(person);
+        for(Person po : personList) {
+              if(personList.contains(person) ){
+                return true;
+            }
+        }
+        return false;
 }
 
     public void remove(E person){

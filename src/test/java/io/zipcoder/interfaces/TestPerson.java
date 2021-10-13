@@ -25,7 +25,6 @@ public class TestPerson {
         //GIVEN
         Person person = new Person(123, "Mickey");
 
-
          //WHEN
         String expected = "laura";
         person.setName(expected);

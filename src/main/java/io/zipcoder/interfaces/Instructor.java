@@ -7,17 +7,28 @@ public class Instructor extends Person implements Teacher {
         super(id, name);
     }
 
+//    @Override
+//    public void teach(Learner learner, double numberOfHours) {
+//
+//    }
+//
+//    @Override
+//    public void lecture(Learner[] learners, double numberOfHours) {
+//
+//    }
+
     @Override
     public void teach(Learner learner, double numberOfHours) {
     learner.learn(numberOfHours);
+
     //invokes the learn method on the specified Learner object.
     }
 
     @Override
     public void lecture(Learner[] learners, double numberOfHours) {
-    for(Learner i : learners){
-        i.learn(numberOfHours / learners.length);
-    }
+        for (Learner i : learners) {
+            i.learn(numberOfHours / learners.length);
+        }
 
 
     }
